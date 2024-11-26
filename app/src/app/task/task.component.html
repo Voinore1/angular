@@ -1,0 +1,9 @@
+@if(task)
+{
+    <li [class.important]="task.priority == 1" [class.done]="task.status == true">{{task.title}}
+        @if(task.deadline)
+        {
+            <span class="deadline">{{task.deadline}}</span>
+        }
+    </li>
+}

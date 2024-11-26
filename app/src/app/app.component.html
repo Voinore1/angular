@@ -1,0 +1,10 @@
+<h1>My To Do List</h1>
+
+    <ul class="todo_list">
+
+        @for (i of tasks; track $index) 
+        {
+            <app-task [task]="i"></app-task>
+        }
+
+    </ul>
