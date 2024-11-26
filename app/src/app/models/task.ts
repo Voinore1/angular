@@ -3,34 +3,35 @@ export interface ITask {
     title: string;
     priority: number;
     status: boolean;
-    deadline?: string;
+    deadline?: Date;
 }
 
 export const TASKS: ITask[] = [
     {
         id: 10,
         title: "Hit the gym",
-        deadline: "01.04.2023",
+        deadline: new Date("01.01.2001"),
         status: false,
         priority: 0
     },
     {
         id: 2,
         title: "Pay bills",
-        deadline: "29.03.2023",
+        deadline: new Date("01.01.2001"),
         status: true,
         priority: 1
     },
     {
         id: 3,
         title: "Buy eggs",
-        deadline: "29.03.2023",
+        deadline: new Date("01.01.2001"),
         status: false,
         priority: 1
     },
     {
         id: 4,
         title: "Meet John",
+        deadline: new Date("01.01.2001"),
         status: false,
         priority: 0
     },
@@ -38,24 +39,27 @@ export const TASKS: ITask[] = [
         id: 5,
         title: "Read a book",
         status: true,
+        deadline: new Date("01.01.2001"),
         priority: 0
     },
     {
         id: 6,
         title: "Organize office",
         status: false,
+        deadline: new Date("01.01.2001"),
         priority: 0
     },
     {
         id: 7,
         title: "Eat dinner",
+        deadline: new Date("01.01.2001"),
         status: false,
         priority: 0
     },
     {
         id: 8,
         title: "Buy apples",
-        deadline: "05.03.2023",
+        deadline: new Date("01.01.2001"),
         status: false,
         priority: 1
     }
