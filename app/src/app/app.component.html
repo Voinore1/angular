@@ -4,7 +4,7 @@
 
         @for (i of tasks; track $index) 
         {
-            <app-task [task]="i"></app-task>
+            <app-task [task]="i" (onDelete)="removeItem($event)"></app-task>
         }
 
     </ul>

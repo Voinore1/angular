@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
-import ITask from '../models/task'
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { ITask } from '../models/task'
 
 @Component({
   selector: 'app-task',
@@ -13,4 +13,11 @@ import ITask from '../models/task'
 export default class TaskComponent {
   @Input()
   task?: ITask;
+
+  @Output()
+  onDelete = new EventEmitter<number>();
+
+  remove() {
+    this.onDelete.emit(this.task?.id);
+  }
 }
