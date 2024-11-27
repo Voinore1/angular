@@ -1,66 +1,66 @@
 export interface ITask {
     id: number;
-    title: string;
-    priority: number;
-    status: boolean;
+    todo: string;
+    priority?: number;
+    completed: boolean;
     deadline?: Date;
 }
 
 export const TASKS: ITask[] = [
     {
         id: 10,
-        title: "Hit the gym",
+        todo: "Hit the gym",
         deadline: new Date("01.01.2001"),
-        status: false,
+        completed: false,
         priority: 0
     },
     {
         id: 2,
-        title: "Pay bills",
+        todo: "Pay bills",
         deadline: new Date("01.01.2001"),
-        status: true,
+        completed: true,
         priority: 1
     },
     {
         id: 3,
-        title: "Buy eggs",
+        todo: "Buy eggs",
         deadline: new Date("01.01.2001"),
-        status: false,
+        completed: false,
         priority: 1
     },
     {
         id: 4,
-        title: "Meet John",
+        todo: "Meet John",
         deadline: new Date("01.01.2001"),
-        status: false,
+        completed: false,
         priority: 0
     },
     {
         id: 5,
-        title: "Read a book",
-        status: true,
+        todo: "Read a book",
+        completed: true,
         deadline: new Date("01.01.2001"),
         priority: 0
     },
     {
         id: 6,
-        title: "Organize office",
-        status: false,
+        todo: "Organize office",
+        completed: false,
         deadline: new Date("01.01.2001"),
         priority: 0
     },
     {
         id: 7,
-        title: "Eat dinner",
+        todo: "Eat dinner",
         deadline: new Date("01.01.2001"),
-        status: false,
+        completed: false,
         priority: 0
     },
     {
         id: 8,
-        title: "Buy apples",
+        todo: "Buy apples",
         deadline: new Date("01.01.2001"),
-        status: false,
+        completed: false,
         priority: 1
     }
 ]

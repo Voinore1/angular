@@ -19,7 +19,7 @@ export class TaskFormComponent {
   
   constructor(private formBuilder: FormBuilder) {
     this.taskForm= this.formBuilder.group({
-      title: ['', Validators.required],
+      todo: ['', Validators.required],
       deadline: [null],
       priority: ['0']
     });

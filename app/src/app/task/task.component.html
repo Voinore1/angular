@@ -1,6 +1,6 @@
 @if(task)
 {
-    <li [class.important]="task.priority == 1" [class.done]="task.status == true">{{task.title}}
+    <li [class.important]="task.priority == 1" [class.done]="task.completed == true">{{task.todo}}
         @if(task.deadline)
         {
             <span class="deadline">{{task.deadline | date:'dd.MM.yyyy'}}</span>
